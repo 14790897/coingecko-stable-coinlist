@@ -44,7 +44,7 @@
 project-root/
 ├── src/
 │   ├── index.ts       // CF Worker 主逻辑
-├── wrangler.toml      // Cloudflare Workers 配置文件
+├── wrangler.json      // Cloudflare Workers 配置文件
 ├── package.json       // 项目依赖
 ├── tsconfig.json      // TypeScript 配置文件
 └── README.md          // 项目文档
@@ -101,7 +101,7 @@ npm install -g wrangler
 
 #### 配置 `wrangler.json`
 
-在项目根目录的 `wrangler.json` 中添加 KV 命名空间配置：
+在项目根目录的 `wrangler.json` 中添加 KV 命名空间配置（需要在cloudflare创建名为coingecko的KV，并获取id填入配置）：
 
 ```json
 {
